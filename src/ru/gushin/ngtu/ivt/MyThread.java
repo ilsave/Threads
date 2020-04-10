@@ -9,8 +9,9 @@ public class MyThread extends  Thread{
         int i = 0;
         while(true){
             String line = scan.nextLine();
-            if("123456".equals(line)) break;
-            System.out.println("info from my thread: "+line.length());
+            if("stop".equals(line)) break;
+            i = i + line.length();
+            System.out.println("число символов: "+ i );
         }
 
     }
