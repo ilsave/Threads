@@ -9,7 +9,7 @@ public class MyThread extends  Thread{
         int i = 0;
         while(true){
             String line = scan.nextLine();
-            if("stop".equals(line)) break;
+            if("stop".equals(line))  break;
             i = i + line.length();
             System.out.println("число символов: "+ i );
         }
